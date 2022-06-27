@@ -1,10 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'fabianeichhorn';
+export class AppComponent implements OnInit {
+  images = ['laptop_color.jpg', 'laptop_color_small.jpg', 'developer_desk.jpg', 'work_desk.jpg'];
+  currentImage = 0;
+  showImage = true;
+
+  ngOnInit() {
+    this.updateImage(); //this. bc of singelton pattern
+  }
+
+  updateImage() {
+    setInterval(() => {
+      this.currentImage++;
+      this.currentImage = this.currentImage % this.images.length;
+      this.showImage = false;
+
+      setTimeout(() => {
+        this.showImage = true;
+      },10)
+    }, 8000)
+  }
 }
