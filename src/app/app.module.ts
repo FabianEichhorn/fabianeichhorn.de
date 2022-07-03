@@ -4,15 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { MenuComponent } from './menu/menu.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SlideshowComponent,
-    MenuComponent
+    MenuComponent,
+    ImprintComponent,
+    DataProtectionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
