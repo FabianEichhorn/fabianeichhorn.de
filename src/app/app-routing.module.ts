@@ -5,11 +5,15 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const routes: Routes = [
   { path: '', component: SlideshowComponent },
   { path: '', component: SkillsComponent},
   { path: '', component: MyWorkComponent},
+  { path: '', component: AboutMeComponent},
+  { path: '', component: ContactMeComponent}, 
   { path: 'imprint', component: ImprintComponent },
   { path: 'data-protection', component:DataProtectionComponent },
 ];

@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MyWorkComponent } from './my-work/my-work.component';
     ImprintComponent,
     DataProtectionComponent,
     SkillsComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    AboutMeComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
