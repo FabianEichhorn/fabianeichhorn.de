@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideshowComponent implements OnInit {
 
-  images = ['laptop_color.jpg', 'developer_desk.jpg', 'work_desk.jpg'];
+  images = ['bg1.jpg','laptop_color.jpg', 'developer_desk.jpg', 'work_desk.jpg'];
   headlines = ['Bring engineering to the next level', 'I dont make mistakes! I build features!', 'Stay hungry. Stay foolish'];
   currentImage = 0;
   showImage = true;
