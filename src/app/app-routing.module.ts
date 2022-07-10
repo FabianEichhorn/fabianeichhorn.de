@@ -8,6 +8,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { IntroduceComponent } from './introduce/introduce.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 const routes: Routes = [
   { path: '', component: IntroduceComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: '', component: MyWorkComponent},
   { path: '', component: AboutMeComponent},
   { path: 'contact-me', component: ContactMeComponent}, 
+  { path: 'contact-form', component: ContactFormComponent},
   { path: 'imprint', component: ImprintComponent },
   { path: 'data-protection', component:DataProtectionComponent },
 ];

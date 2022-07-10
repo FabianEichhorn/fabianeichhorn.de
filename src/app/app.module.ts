@@ -12,6 +12,9 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { IntroduceComponent } from './introduce/introduce.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { IntroduceComponent } from './introduce/introduce.component';
     MyWorkComponent,
     AboutMeComponent,
     ContactMeComponent,
-    IntroduceComponent
+    IntroduceComponent,
+    ContactFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
