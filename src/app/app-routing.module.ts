@@ -7,13 +7,14 @@ import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { IntroduceComponent } from './introduce/introduce.component';
 
 const routes: Routes = [
-  { path: '', component: SlideshowComponent },
+  { path: '', component: IntroduceComponent },
   { path: '', component: SkillsComponent},
   { path: '', component: MyWorkComponent},
   { path: '', component: AboutMeComponent},
-  { path: '', component: ContactMeComponent}, 
+  { path: 'contact-me', component: ContactMeComponent}, 
   { path: 'imprint', component: ImprintComponent },
   { path: 'data-protection', component:DataProtectionComponent },
 ];
