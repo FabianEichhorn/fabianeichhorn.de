@@ -1,17 +1,28 @@
-<div class="contact-container-wrap">
-    <div class="contact-container">
-        <form name="form" action="../../assets/send_mail/send_mail.php" method="post" required>
-            <div class="form-container">
-                <label class="padding-bottom-s padding-top-s paragraph" for="name">Name</label>
-                <input required type="text" name="name" id="name" placeholder="Enter your name" />
-                <label class="padding-bottom-s padding-top-s paragraph" for="email">Email address</label>
-                <input type="email" name="email" placeholder="Enter your Email address" />
-                <label class="padding-bottom-s padding-top-s paragraph" for="message">Message</label>
-                <textarea required placeholder="Enter your message" name="message"></textarea>
-                <div>
-                    <button type="submit" class="button-green paragraph">Send</button>
-                </div>
-            </div>
-        </form>
+<form action="https://formspree.io/f/xlezworn" method="POST">
+    <div class="contact-form">
+        <div data-aos="fade-right" class="form-field-container">
+            <p>Name</p>
+            <mat-form-field color="accent" appearance="outline">
+                <mat-label>Name</mat-label>
+                <input id="name" matInput placeholder="Enter your name" />
+            </mat-form-field>
+        </div>
+        <div data-aos="fade-left" class="form-field-container">
+            <p>Email Address</p>
+            <mat-form-field color="accent" appearance="outline">
+                <mat-label>E-Mail</mat-label>
+                <input id="e-mail" type="email" name="email" matInput placeholder="Enter your Email address" />
+            </mat-form-field>
+        </div>
+        <div data-aos="fade-right" class="form-field-container">
+            <p>Message</p>
+            <mat-form-field color="accent" appearance="outline">
+                <mat-label>Message</mat-label>
+                <textarea id="message" name="message" matInput placeholder="Enter your message"></textarea>
+            </mat-form-field>
+        </div>
+        <button data-aos="zoom-out-up" (click)="submit()" type="submit" class="from-center" mat-stroked-button>
+        SUBMIT
+      </button>
     </div>
-</div>
+</form>

@@ -11,7 +11,9 @@ describe('ContactFormComponent', () => {
       declarations: [ ContactFormComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ContactFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
