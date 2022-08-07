@@ -46,3 +46,15 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+@media (max-width: 650px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 650px) {
+    .hide-mobile {
+        display: none;
+    }
+}

@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: '', component: IntroduceComponent },
   { path: '', component: SkillsComponent},
   { path: '', component: MyWorkComponent},
-  { path: '', component: AboutMeComponent},
+  { path: 'about', component: AboutMeComponent},
   { path: 'contact-me', component: ContactMeComponent}, 
   { path: 'contact-form', component: ContactFormComponent},
   { path: 'imprint', component: ImprintComponent },

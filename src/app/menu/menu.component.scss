@@ -38,3 +38,135 @@ header {
     background-color: white;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
+
+#menu-bar {
+    width: 1.8rem;
+    height: 1rem;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 150ms ease-in-out;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(3px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-5px) rotateZ(45deg);
+}
+
+@media (max-width: 1300px) {
+    header {
+        padding: 1.5rem 6.1rem 0;
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 1.5rem 4rem 0;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 1.5rem 3rem 0;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 1.5rem 2rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 1.5rem 0;
+        background-color: #000000;
+        a {
+            margin-top: 1rem;
+            font-size: 24px;
+        }
+    }
+    .header-links {
+        display: none;
+    }
+    .mobile-links {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding: 0;
+        }
+    }
+    #menu {
+        display: block;
+        z-index: 2;
+        top: 2rem;
+        left: 1.3rem;
+    }
+    #links {
+        margin-top: 2rem;
+    }
+    .links {
+        position: absolute;
+        right: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 350px) {
+    .mobile-links {
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+    a,
+    a:visited,
+    a:hover {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 300px) {
+    .mobile-links {
+        li {
+            margin-bottom: 0.25rem;
+        }
+    }
+}

@@ -1,84 +1,133 @@
-.slideshow-container {
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.img-slideshow {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    max-width: 100%;
-    animation: zoomIn 16s ease;
-}
-
-@keyframes zoomIn {
-    0%,
-    100% {
-        transform: scale(1);
+    .slideshow-container {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
     }
-    ;
-    50% {
-        transform: scale(1.05);
+    
+    .img-slideshow {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        max-width: 100%;
+        animation: zoomIn 16s ease;
+        object-fit: cover;
     }
-    /* from {
+    
+    @keyframes zoomIn {
+        0%,
+        100% {
+            transform: scale(1);
+        }
+        ;
+        50% {
+            transform: scale(1.05);
+        }
+        /* from {
         transform: scale(1);
     }
     to {
         transform: scale(1.1);
     } */
-}
-
-.slideshow-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    p {
-        color: white;
-        font-size: 48px;
-        max-width: 800px;
-        padding-left: 16px;
-        font-weight: bold;
-        font-size: 4rem;
-        height: 100%;
-        &:hover {
-            color: #ea3f3f;
+    }
+    
+    .slideshow-overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        p {
+            color: white;
+            font-size: 48px;
+            max-width: 800px;
+            padding-left: 16px;
+            font-weight: bold;
+            font-size: 4rem;
+            height: 100%;
+            &:hover {
+                color: #ea3f3f;
+            }
         }
     }
-}
-
-.row {
-    display: flex;
-    margin-top: 50px;
-}
-
-.first-name {
-    color: #ea3f3f !important;
-}
-
-.fade-in {
-    margin-left: 120px;
-    animation: fadeInAnimation 1.2s ease-in-out repeat
-}
-
-@keyframes fadeInAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    
+    .row {
+        display: flex;
+        margin-top: 50px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    
+    .first-name {
+        color: #ea3f3f !important;
     }
-}
-
-.portrait {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 100%;
-    margin-left: 350px;
-}
+    
+    .fade-in {
+        margin-left: 120px;
+        animation: fadeInAnimation 1.2s ease-in-out repeat
+    }
+    
+    .p-left {
+        padding-left: 0 !important;
+    }
+    
+    @keyframes fadeInAnimation {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .portrait {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-right: 120px;
+    }
+    
+    @media (max-width: 1300px) {
+        .portrait {
+            width: 300px;
+            height: 300px;
+        }
+        .slideshow-overlay {
+            p {
+                font-size: 3rem;
+            }
+        }
+    }
+    
+    @media (max-width: 1000px) {
+        .slideshow-container {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .row {
+            margin-left: 0;
+            justify-content: center;
+        }
+        .portrait {
+            margin-right: 0;
+        }
+        .fade-in {
+            margin-left: 0;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .slideshow-overlay {
+            p {
+                font-size: 2.5rem;
+            }
+        }
+        .portrait {
+            width: 250px;
+            height: 250px;
+        }
+    }

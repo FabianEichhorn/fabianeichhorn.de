@@ -1,28 +1,25 @@
-<form action="https://formspree.io/f/xlezworn" method="POST">
-    <div class="contact-form">
-        <div data-aos="fade-right" class="form-field-container">
-            <p>Name</p>
-            <mat-form-field color="accent" appearance="outline">
-                <mat-label>Name</mat-label>
-                <input id="name" matInput placeholder="Enter your name" />
-            </mat-form-field>
-        </div>
-        <div data-aos="fade-left" class="form-field-container">
-            <p>Email Address</p>
-            <mat-form-field color="accent" appearance="outline">
-                <mat-label>E-Mail</mat-label>
-                <input id="e-mail" type="email" name="email" matInput placeholder="Enter your Email address" />
-            </mat-form-field>
-        </div>
-        <div data-aos="fade-right" class="form-field-container">
-            <p>Message</p>
-            <mat-form-field color="accent" appearance="outline">
-                <mat-label>Message</mat-label>
-                <textarea id="message" name="message" matInput placeholder="Enter your message"></textarea>
-            </mat-form-field>
-        </div>
-        <button data-aos="zoom-out-up" (click)="submit()" type="submit" class="from-center" mat-stroked-button>
-        SUBMIT
-      </button>
-    </div>
-</form>
+<div id="contact" class="contact-box">
+
+    <form class="contact-form" action="https://formspree.io/f/xlezveqj" method="POST">
+        <label data-aos="fade-right" data-aos-duration="1000">
+        <span>Name</span>
+            <input type="text" name="text" placeholder="Name" #name required>
+          </label>
+        <label data-aos="fade-left" data-aos-duration="1000">
+        <span>Email</span>
+            <input type="email" name="email" placeholder="Email" #email required>
+        </label>
+        <label data-aos="fade-right" data-aos-duration="1000">
+        <span>Message</span>
+            <textarea name="message" placeholder="Message" #message required></textarea>
+        </label>
+        <button data-aos="fade-left" data-aos-duration="1000" type="submit">Send</button>
+    </form>
+
+    <!-- <div id="submitFeedback" class="submit-feedback">
+        <img src="/assets/img/x_white.png" alt="">
+        <h1>Nachricht wurde gesendet</h1>
+        <h3>Vielen Dank !</h3>
+
+    </div> -->
+</div>
