@@ -47,6 +47,10 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+d-none {
+    display: none;
+}
+
 @media (max-width: 650px) {
     .hide-desktop {
         display: none;

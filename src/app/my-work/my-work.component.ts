@@ -15,4 +15,31 @@ export class MyWorkComponent implements OnInit {
     AOS.init();
   }
 
+
+  allWork() {
+    document.getElementById('1').classList.remove('d-none');
+    document.getElementById('2').classList.remove('d-none');
+    document.getElementById('3').classList.remove('d-none');
+    document.getElementById('4').classList.remove('d-none');
+    document.getElementById('5').classList.remove('d-none');
+    document.getElementById('6').classList.remove('d-none');
+  }
+
+  showAngular(){
+    document.getElementById('5').classList.remove('d-none');
+    document.getElementById('6').classList.remove('d-none');
+    document.getElementById('1').classList.add('d-none');
+    document.getElementById('2').classList.add('d-none');
+    document.getElementById('3').classList.add('d-none');
+    document.getElementById('4').classList.add('d-none');
+  }
+
+  showJavaScript() {
+    document.getElementById('1').classList.remove('d-none');
+    document.getElementById('2').classList.remove('d-none');
+    document.getElementById('3').classList.remove('d-none');
+    document.getElementById('4').classList.remove('d-none');
+    document.getElementById('5').classList.add('d-none');
+    document.getElementById('6').classList.add('d-none');
+  }
 }
