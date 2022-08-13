@@ -14,13 +14,14 @@ header {
         cursor: pointer;
     }
     a {
+        cursor: pointer;
         color: white;
         text-decoration: none;
         margin-left: 32px;
         font-weight: 600;
         font-size: 1.2rem;
         &:hover {
-            color: #e12525;
+            color: #ea3f3f;
         }
     }
 }
@@ -29,7 +30,7 @@ header {
     a {
         color: black;
         &:hover {
-            color: #e12525;
+            color: #ea3f3f;
         }
     }
 }

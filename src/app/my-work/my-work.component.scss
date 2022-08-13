@@ -73,6 +73,24 @@
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
     }
+    button {
+        color: white;
+        width: 10vw;
+        margin: 1rem 0.5rem;
+        padding: 1rem 0;
+        border: 2px solid #fa2759;
+        border-radius: 6px;
+        background-color: transparent;
+        transition: ease-in-out 100ms;
+        &:hover {
+            background-color: #fa2759;
+            color: #000000;
+        }
+        &:active {
+            background-color: #fa2759;
+            color: #000000;
+        }
+    }
 }
 
 .project-img {

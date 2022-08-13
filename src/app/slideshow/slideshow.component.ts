@@ -27,5 +27,14 @@ export class SlideshowComponent implements OnInit {
       },1)
     }, 8000)
   }
+
+  toMySkills() {
+    document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toContactMe() {
+    document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+  }
 }
+
 
