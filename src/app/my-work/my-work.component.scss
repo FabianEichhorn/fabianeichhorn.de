@@ -23,6 +23,7 @@
     max-width: 100%;
     margin-bottom: 3rem;
     button {
+        cursor: pointer;
         color: #fff;
         width: 12%;
         margin: 0 0.2rem;
@@ -86,6 +87,7 @@
         border-radius: 6px;
         background-color: transparent;
         transition: ease-in-out 100ms;
+        cursor: pointer;
         &:hover {
             background-color: #fa2759;
             color: #000000;

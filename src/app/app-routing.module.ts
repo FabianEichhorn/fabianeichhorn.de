@@ -10,6 +10,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { IntroduceComponent } from './introduce/introduce.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
+
 const routes: Routes = [
   { path: '', component: IntroduceComponent },
   { path: '', component: SkillsComponent},
